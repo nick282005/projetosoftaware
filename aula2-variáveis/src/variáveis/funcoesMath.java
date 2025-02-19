@@ -11,7 +11,7 @@ public class funcoesMath {
         System.out.println(raizQuadrada);
         
         double numeroAleatorio = Math.random();
-        System.out.println.printf( "%.2f", numeroAleatorio); 
+        System.out.println( "%.2f", numeroAleatorio); 
        
 }
 	
