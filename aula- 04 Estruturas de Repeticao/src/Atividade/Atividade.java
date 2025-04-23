@@ -102,7 +102,7 @@ public class Atividade {
 	
 	//4
 		//Média de Números com DO-WHILE
-		int soma = 0, contador = 0, numero;
+	/*	int soma = 0, contador = 0, numero;
 		
 		
 	        do {
@@ -121,8 +121,44 @@ public class Atividade {
 	            System.out.println("A média dos números digitados é: " + media);
 	        } else {
 	            System.out.println("Nenhum número foi digitado.");
-	        }
+	        } */
+	
+	//5
+		//Número Par ou Ímpar com WHILE
+	/*	int somaPares = 0, somaImpares = 0, numero;
 	    
+	    System.out.println("Digite números (0 para sair):");
+	    numero = sc.nextInt();
+	    
+	    while (numero != 0) {
+	        if (numero % 2 == 0) {
+	            somaPares += numero;
+	            System.out.println(numero + " é par.");
+	        } else {
+	            somaImpares += numero;
+	            System.out.println(numero + " é ímpar.");
+	        }
+	        numero = sc.nextInt();
+	    }
+	    
+	    
+	    System.out.println("Soma dos números pares: " + somaPares);
+	    System.out.println("Soma dos números ímpares: " + somaImpares);*/
+
+//6
+		//Fatorial de um Número
+		System.out.print("Digite um número inteiro positivo: ");
+		int numero = sc.nextInt();
+    
+	    if (numero < 0) {
+	        System.out.println("Número inválido! Digite um inteiro positivo.");
+	    } else {
+	        long fatorial = 1;
+	        for (int i = 1; i <= numero; i++) {
+	            fatorial *= i;
+	        }
+	        System.out.println("O fatorial de " + numero + " é: " + fatorial);
+		    
 
 		
 
@@ -130,6 +166,7 @@ public class Atividade {
 	
 	sc.close();
 	
-	}
+	  }
 
+	}
 }
