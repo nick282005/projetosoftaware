@@ -1,14 +1,20 @@
 package entidades;
 
+ main
 import servico.Aluga;
 
 public class Carro extends Veiculos implements Aluga {
 
 	//Encapsulamento
+=======
+public class Carro extends Veiculos{
+	//Encpsulmento
+ main
 	//Atributos
 	private boolean arCondicionado;
 	
 	//Construtor
+ main
 		public Carro(String Marca, String modelo, int ano, double valorDiario, boolean arCondicionado) {
 		super(Marca, modelo, ano, valorDiario);
 		this.arCondicionado = arCondicionado;
@@ -33,4 +39,26 @@ public class Carro extends Veiculos implements Aluga {
 			}
 			return valorAluguel;
 		}
+=======
+	public Carro(String marca, String modelo, int ano, double valorDiario, boolean arCondcionado) {
+		super(marca, modelo, ano, valorDiario);
+		this.arCondicionado = arCondicionado;
+	
+		
+	}
+  
+	//toString
+	@Override
+	public String toString() {
+		return "Marca:" + getMarca() +
+				"\nModelo:" + getModelo()+
+				"\nAno:"+ getAno()+
+				"\nvalor diaria:" + getValorDiario()+
+				"\nCilindradas:" + arCondicionado;
+		
+				
+	}
+	
+	
+ main
 }
