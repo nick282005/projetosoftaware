@@ -6,7 +6,7 @@ import java.sql.SQLException;
  
 public class ConexaoDB {
  
-	private static final String URL = "jbdc:mysql://localhost/3306/sistema";
+	private static final String URL = "jdbc:mysql://localhost:3306/sistema";
 	
 	
 	//Informar o Usuario e a senha do banco de dados
